@@ -1,0 +1,16 @@
+<h1><%= @post.title %> </h1>
+ Blogger: <%= link_to @post.blogger.name, blogger_path(@post.blogger) %> <br>
+ Destination: <%= link_to @post.destination.name, destination_path(@post.destination) %> <br>
+ Likes: <%= @post.likes %> <br>
+
+     
+<hr><br>
+
+     <p> <%= @post.content.tr("[]",'') %> </p>
+
+<br><hr><br>
+ <div align="left"><%= button_to "Like this post", like_path %></div>
+
+
+
+
